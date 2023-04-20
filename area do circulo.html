@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Calculadora de Área de Triângulos</title>
+    <link rel="stylesheet" href="main.css"   type='text/css'>
+      
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+    #retangulo {
+        height: 100px;
+        width: 200px;
+        background: blue;
+    }
+</style>
+</head>
+
+
+<body>
+
+    <div class="container-fluid">
+        
+        
+        <form>
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <h1>Calculadora de área de circulos</h1>
+                    <p>Insira o raio de seu circulo</p>
+                    <label class="escrita"for="raidius">raio</label>
+                    <input type="number" id="raio">
+                </div>
+             
+            </div>
+                <div class="form-group col-md-3">
+                    <button type="button" class="btn btn-primary" onclick="Calcula()">Calcular</button>
+                </div>
+                <div>
+                    <div>
+                        <label class="escrita" for="area">resultado: </label>
+                        <input type="number" class="form-control" id="area">
+                    </div>
+             </div>
+               </div>
+           
+        </form>
+    </div>
+    <script>
+        function Calcula() {
+            var raio = document.getElementById("raio").value;
+        
+
+
+            var area = raio * raio* Math.PI;
+
+
+            var inputArea = document.getElementById("area");
+            inputArea.value = area;
+
+
+        }
+    </script>
+</body>
+
+
+</html>
+
+
