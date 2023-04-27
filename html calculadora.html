@@ -1,270 +1,301 @@
-<html>
+* {
+    background-color: #d2dddd;
+    margin-top: 3%;
+}
 
 
 
 
-<head>
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="calculadora.css" type='text/css'>
+.titulo1 {
+    text-align: center;
+    color: #3e8f92;
+    font-size: 200%;
+    top: 30%;
+}
 
 
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 
-</head>
+.subtitulo1 {
+    color: rgb(102, 106, 106);
+    font-size: x-large;
+    position: absolute;
+    font-style: bold italic;
+    top: 15%;
+    left: 44.1%;
+}
 
 
-<body>
 
 
-    <div>
-        <h1 class="titulo1">Calculadora</h1>
-    </div>
+.subtitulo2 {
+    color: rgb(102, 106, 106);
+    font-size: x-large;
+    position: absolute;
+    font-style: bold italic;
+    top: 60%;
+    left: 42.5%;
+}
 
 
-    <div class="AreaDoCirculo">
 
 
-        <p class="subtitulo1">Área do círculo</p>
+.subtitulo3 {
+    color: rgb(102, 106, 106);
+    font-size: x-large;
+    position: absolute;
+    font-style: bold italic;
+    top: 115%;
+    left: 32%;
+}
 
 
-        <div class="raio">
-            <input type="number"  id="raio" placeholder="Raio">
-        </div>
 
 
-        <div>
-            <button type="button" class="btn1" onclick="Calcula1()">Calcular</button>
-        </div>
-        <form>
-            <div class="resultado1" id="area">
-                <input type="text" placeholder="Resultado">
-            </div>
+.subtitulo4 {
+    color: rgb(102, 106, 106);
+    font-size: x-large;
+    position: absolute;
+    font-style: bold italic;
+    top: 163%;
+    left: 40%;
+}
 
 
-        </form>
+.subtitulo5 {
+    color: rgb(102, 106, 106);
+    font-size: x-large;
+    position: absolute;
+    font-style: bold italic;
+    top: 215%;
+    left: 43%;
+}
 
 
-        <script>
-            function Calcula1(AreaDoCirculo) {
-                var raio = document.getElementById("raio").value;
+.subtitulo6 {
+    color: rgb(102, 106, 106);
+    font-size: x-large;
+    position: absolute;
+    font-style: bold italic;
+    top: 258%;
+    left: 42.3%;
+}
 
 
-                var area = raio * raio * Math.PI;
+.formula {
+    color: rgb(102, 106, 106);
+    position: absolute;
+    font-style: bold italic;
+    top: 103%;
+    left: 36%;
+    font-size: 85%;
+}
 
 
-                var inputArea = document.getElementById("area");
-                inputArea.value = area;
 
 
-                document.getElementById("area").innerHTML.value = area;
-               
-            }
-        </script>
+.btn1 {
+    border-color: cadetblue;
+    background-color: #5f9ea0;
+    margin-left: 50%;
+    left: -3%;
+    position: absolute;
+    top: 40%;
+}
 
 
-    </div>
 
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr class="dashed">
-    <br>
-    <br>
-    <br>
+.btn2 {
+    border-color: cadetblue;
+    background-color: #5f9ea0;
+    margin-left: 50%;
+    left: -3%;
+    position: absolute;
+    top: 85.2%;
+}
 
 
-    <div class="AreaDoTriangulo">
 
 
-        <div class="subtitulo2">
-            <p> Área do Triângulo</p>
-        </div>
+.btn3 {
+    border-color: cadetblue;
+    background-color: #5f9ea0;
+    margin-left: 50%;
+    left: -3%;
+    position: absolute;
+    top: 142.5%;
+}
 
 
-        <div>
-            <h1 class="formula"> Fórmula: A = (b * h) / 2, onde A = área, b = base e h = altura</h1>
-        </div>
 
 
-        <form>
+.btn4 {
+    border-color: cadetblue;
+    background-color: #5f9ea0;
+    margin-left: 50%;
+    left: -3%;
+    position: absolute;
+    top: 195%;
+}
 
 
-            <div class="base">
-                <input type="number" placeholder="Base">
-            </div>
 
 
-            <div class="altura">
-                <input type="number" placeholder="Altura">
-            </div>
+.btn5 {
+    border-color: cadetblue;
+    background-color: #5f9ea0;
+    margin-left: 50%;
+    left: -3%;
+    position: absolute;
+    top: 241%;
+}
 
 
-            <button type="button" class="btn2" onclick="Calcula2()">Calcular</button>
 
 
-        </form>
+.btn6 {
+    border-color: cadetblue;
+    background-color: #5f9ea0;
+    margin-left: 50%;
+    left: -3%;
+    position: absolute;
+    top: 283%;
+}
 
 
-        <div class="resultado2">
-            <input type="text" placeholder="Resultado">
-        </div>
 
 
-        <script>
-            function Calcula2() {
-                var base = document.getElementById("base").value;
-                var altura = document.getElementById("altura").value;
+.btn7 {
+    border-color: cadetblue;
+    background-color: #5f9ea0;
+    margin-left: 50%;
+    left: -3%;
+    position: absolute;
+}
 
 
-                var area = (base * altura) / 2;
 
 
-                var inputArea = document.getElementById("area");
-                inputArea.value = area;
-            }
-        </script>
+.escrita {
+    font size: 14px;
+    font-style: italic;
+    text-align: center;
+    margin-left: 40%;
+    z-index: 2;
+}
 
 
-    </div>
 
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr class="dashed">
-    <br>
-    <br>
-    <br>
+.escrita2 {
+    color: rgb(102, 106, 106);
+    position: absolute;
+    font-style: bold italic;
+    top: 170%;
+    left: 43%;
+}
 
 
-    <div class="fahrenheit">
-        <div class="subtitulo3">
-            <p> Conversão de Fahrenheit (°F) em Graus Celsius (°C)</p>
-        </div>
 
 
-        <form>
+.raio{
+    position: absolute;
+    left: 43%;
+}
 
 
-            <div class="valorF">
-                <input type="number" placeholder="valor em °F" id="num">
-            </div>
 
 
-            <div class="btn">
-                <button type="button" class="btn3" onclick="Calcula()">Calcular</button>
-            </div>
+.resultado1{
+    position: absolute;
+    top: 30%;
+    left: 43%;
+}
 
 
-            <div id="resposta" style='display:inline'></div>
 
 
-        </form>
+.resultado2{
+    position: absolute;
+    top: 92%;
+    left: 43%;
+}
 
 
-        <div class="Resultado3">
-            <input type="text" placeholder="Conversão">
-        </div>
 
 
-        <script type="text/javascript">
-            function main() {
-                var num = parseInt(document.getElementById("num").value);
-                var resp = document.getElementById("resposta");
+.resultado3{
+    position: absolute;
+    top: 132.8%;
+    left: 43%;
+}
 
 
-                if (document.getElementById("CtoF").checked == true)
-                    resp.innerHTML = ctof(num);
-                if (document.getElementById("FtoC").checked == true)
-                    resp.innerHTML = ftoc(num);
-            }
-            function ctof(x) {
-                return (1.8 * x + 32);
-            }
+.resultado4{
+    position: absolute;
+    top: 274%;
+    left: 43%;
+}
 
 
-            function ftoc(x) {
+.base{
+    position: absolute;
+    left: 43%;
+    top: 70%;
+}
 
 
-                return ((x - 32) * 5 / 9);
-            }
-        </script>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr class="dashed">
-    <br>
-    <br>
-    <br>
 
 
-    <div class="PorcentagemDeDesconto">
+.altura{
+    position: absolute;
+    left: 43%;
+    top: 75.5%;
+}
 
 
-        <div class="subtitulo4">
-            <h1>Calcule 5% de desconto:</h1>
-        </div>
 
 
-        <div>
-            <label for="valor" class="escrita2"> Digite o valor do Produto: </label> <br>
-            <input type="text" id="valor" name="valor" placeholder="valor" class="valor" required class="form-control">
-        </div>
+.valorF{
+    position: absolute;
+    left: 43%;
+    top: 127%;
+}
 
 
-        <div>
-            <p>Desconto: </p>
-            <input type="text" id="pagar" name="pagar">
-            <input class="form-control" id="botao1" type="button" value="Calcular" onclick="calcular()">
-        </div>
 
 
-        <script>
-            function calcular() {
-                var valor = document.getElementById("valor").value;
-                var resultado = document.getElementById("pagar");
-                var desconto = 0;
+.valor{
+    position: absolute;
+    top: 180%;
+    left: 43%;
+}
 
 
-                desconto = valor * 0.05;
-                valor = valor * 0.95;
+.desconto{
+    position: absolute;
+    top: 186%;
+    left: 43%;
+}
 
 
-                resultado.value = "Desconto: " + desconto + ". Pagar: " + valor;
-            }
-        </script>
+.valor3{
+    position: absolute;
+    top: 225%;
+    left: 43%;
+}
 
 
-    </div>
+.cubo{
+    position: absolute;
+    top: 231%;
+    left: 43%;
+}
 
 
-</body>
-
-
-</html>
-
-
+.custo{
+    position: absolute;
+    top: 268%;
+    left: 43%;
+}
