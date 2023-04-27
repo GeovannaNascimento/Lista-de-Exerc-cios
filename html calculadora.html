@@ -1,0 +1,270 @@
+<html>
+
+
+
+
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css" type='text/css'>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+    <div>
+        <h1 class="titulo1">Calculadora</h1>
+    </div>
+
+
+    <div class="AreaDoCirculo">
+
+
+        <p class="subtitulo1">Área do círculo</p>
+
+
+        <div class="raio">
+            <input type="number"  id="raio" placeholder="Raio">
+        </div>
+
+
+        <div>
+            <button type="button" class="btn1" onclick="Calcula1()">Calcular</button>
+        </div>
+        <form>
+            <div class="resultado1" id="area">
+                <input type="text" placeholder="Resultado">
+            </div>
+
+
+        </form>
+
+
+        <script>
+            function Calcula1(AreaDoCirculo) {
+                var raio = document.getElementById("raio").value;
+
+
+                var area = raio * raio * Math.PI;
+
+
+                var inputArea = document.getElementById("area");
+                inputArea.value = area;
+
+
+                document.getElementById("area").innerHTML.value = area;
+               
+            }
+        </script>
+
+
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr class="dashed">
+    <br>
+    <br>
+    <br>
+
+
+    <div class="AreaDoTriangulo">
+
+
+        <div class="subtitulo2">
+            <p> Área do Triângulo</p>
+        </div>
+
+
+        <div>
+            <h1 class="formula"> Fórmula: A = (b * h) / 2, onde A = área, b = base e h = altura</h1>
+        </div>
+
+
+        <form>
+
+
+            <div class="base">
+                <input type="number" placeholder="Base">
+            </div>
+
+
+            <div class="altura">
+                <input type="number" placeholder="Altura">
+            </div>
+
+
+            <button type="button" class="btn2" onclick="Calcula2()">Calcular</button>
+
+
+        </form>
+
+
+        <div class="resultado2">
+            <input type="text" placeholder="Resultado">
+        </div>
+
+
+        <script>
+            function Calcula2() {
+                var base = document.getElementById("base").value;
+                var altura = document.getElementById("altura").value;
+
+
+                var area = (base * altura) / 2;
+
+
+                var inputArea = document.getElementById("area");
+                inputArea.value = area;
+            }
+        </script>
+
+
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr class="dashed">
+    <br>
+    <br>
+    <br>
+
+
+    <div class="fahrenheit">
+        <div class="subtitulo3">
+            <p> Conversão de Fahrenheit (°F) em Graus Celsius (°C)</p>
+        </div>
+
+
+        <form>
+
+
+            <div class="valorF">
+                <input type="number" placeholder="valor em °F" id="num">
+            </div>
+
+
+            <div class="btn">
+                <button type="button" class="btn3" onclick="Calcula()">Calcular</button>
+            </div>
+
+
+            <div id="resposta" style='display:inline'></div>
+
+
+        </form>
+
+
+        <div class="Resultado3">
+            <input type="text" placeholder="Conversão">
+        </div>
+
+
+        <script type="text/javascript">
+            function main() {
+                var num = parseInt(document.getElementById("num").value);
+                var resp = document.getElementById("resposta");
+
+
+                if (document.getElementById("CtoF").checked == true)
+                    resp.innerHTML = ctof(num);
+                if (document.getElementById("FtoC").checked == true)
+                    resp.innerHTML = ftoc(num);
+            }
+            function ctof(x) {
+                return (1.8 * x + 32);
+            }
+
+
+            function ftoc(x) {
+
+
+                return ((x - 32) * 5 / 9);
+            }
+        </script>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr class="dashed">
+    <br>
+    <br>
+    <br>
+
+
+    <div class="PorcentagemDeDesconto">
+
+
+        <div class="subtitulo4">
+            <h1>Calcule 5% de desconto:</h1>
+        </div>
+
+
+        <div>
+            <label for="valor" class="escrita2"> Digite o valor do Produto: </label> <br>
+            <input type="text" id="valor" name="valor" placeholder="valor" class="valor" required class="form-control">
+        </div>
+
+
+        <div>
+            <p>Desconto: </p>
+            <input type="text" id="pagar" name="pagar">
+            <input class="form-control" id="botao1" type="button" value="Calcular" onclick="calcular()">
+        </div>
+
+
+        <script>
+            function calcular() {
+                var valor = document.getElementById("valor").value;
+                var resultado = document.getElementById("pagar");
+                var desconto = 0;
+
+
+                desconto = valor * 0.05;
+                valor = valor * 0.95;
+
+
+                resultado.value = "Desconto: " + desconto + ". Pagar: " + valor;
+            }
+        </script>
+
+
+    </div>
+
+
+</body>
+
+
+</html>
+
+
